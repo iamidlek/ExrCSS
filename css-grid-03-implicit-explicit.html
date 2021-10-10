@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/style.css">
+  <title>CSS Grid Implicit vs Explicit Grid Tracks!</title>
+  <!-- 가로, 세로의 너비를 지정 한 수 까지 -->
+  <!-- 예 컬럼을 2개로 잡아서 로우가 5 개 생겼다
+  로우 높이를 2개만 지정하면 나머지 부분의 로우도  -->
+</head>
+
+<body>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+  </div>
+
+  <style>
+    .container {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: 200px 400px;
+      grid-template-rows: 50px 100px;
+      grid-auto-rows: 100px;
+      grid-auto-columns: 100px;
+    }
+  </style>
+</body>
+
+</html>
